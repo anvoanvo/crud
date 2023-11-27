@@ -17,7 +17,7 @@ const getTopicById = async (id) => {
   }
 }
 
-export default async function EditTopicForm({ params }) {
+export default async function EditTopic({ params }) {
   const { id } = params
   const { topic } = await getTopicById(id)
   const { title, description } = topic
